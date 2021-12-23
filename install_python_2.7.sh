@@ -1,4 +1,4 @@
-apt-get install python
+apt-get install -y python
 curl https://bootstrap.pypa.io/2.7/get-pip.py --output ~/get-pip.py
 python ~/get-pip.py
 

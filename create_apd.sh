@@ -56,6 +56,9 @@ EOF
 
 echo "denyinterfaces wlan0" >> /etc/dhcpcd.conf
 
+
+systemctl unmask hostapd.service
+
 systemctl enable hostapd
 systemctl enable dnsmasq
 

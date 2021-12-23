@@ -24,6 +24,6 @@ iptables -A FORWARD -i $ADAPTER -o wlan0 -m state --state RELATED,ESTABLISHED -j
 iptables -A FORWARD -i wlan0 -o $ADAPTER -j ACCEPT
 
 
-iptables-save > etc/iptables.ipv4.nat
+sh -c "iptables-save > etc/iptables.ipv4.nat"
 
 iptables-restore < etc/iptables.ipv4.nat
